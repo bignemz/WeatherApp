@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Responisive Weather App</title>
+    <script src="https://kit.fontawesome.com/dafe86099d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./js/main.js" type="module"></script>
+
+</head>
+<body class="rain
+">
+    <main class="fade-in">
+        <h1 class="offscreen">Responsive Weather</h1>
+        <section  id="searchBar"  class="searchBar fade-in">
+            <form id="searchBar_form" class="searchBar_form" role="search">
+
+                <label for=" searchBar_text" class="offscreen">Enter a new location</label>
+                <input type="text"  id="searchBar_text"  class="searchBar_text" autocomplete="off" placeholder="City,State,Country">
+                <button id="searchBar_button" class="searchBar_button" title="Submit Location" aria-label="Enter ZipCode or ,City , State and Country to retreive weather conditions">
+                    <i class="fa-solid fa-search"></i>
+                    <i class="fa-solid fa-sync fa-spin none"></i>
+                </button>
+            </form>
+        </section>
+        <a href="#currentForecast"> skip to  current condition</a>
+        <section class="currentForecast fade-in" id="currentForecast" role="region
+        " aria-labelledby="weatherLocation
+        ">
+            <h2 id="currentForecast_location" class="currentForecast_location"> Current Condition
+            </h2>
+             <!-- <div class="currentForecast_condition" id="currentForecast_condition">
+                <div class="icon">   <i class="far fa-sun"></i></div>
+                <div class="maxtemp">High 62º</div>
+                <div class="mintemp">Low 39º</div>
+               <div class="temp">59º <div class="unit">F</div></div>
+
+<div class="mine"> <div class="desc">Clear Sky </div>
+<div class="feels">Feels Like 53</div>
+<div class="humidity">Humidity 44%</div>
+<div class="wind">Wind 7 mph</div></div>
+               
+
+             </div> -->
+         </section>
+            <a href="#currentForecast"> skip to  current condition</a>
+       
+        <nav id="navButton"  class="navButton fade-in">
+
+            <button class="button" id="getLocation" title="Get location " aria-label="Get the current weather condition">
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fa-sharp fa-solid fa-spinner fa-spin none"></i>
+
+            </button>
+            <button class="button" id="home" title="Home Weather " aria-label="Get the current home ">
+                <i class="fa-solid fa-house-chimney"></i>
+                
+                <i class="fa-solid fa-sync fa-spin none"></i>
+
+            </button>
+            <button class="button" id="Save" title="Save location " aria-label="save the current location ">
+                <i class="fa-solid fa-save"></i>
+                
+                <i class="fa-solid fa-sync fa-spin none"></i>
+
+            </button>
+            <button class="button" id="unit" title="Toggle unit " aria-label="Toggle betweeen measurment unit ">
+                <i class="fa-solid fa-chart-bar"></i>
+                
+                <i class="fa-solid fa-sync fa-spin none"></i>
+
+            </button>
+            <button class="button" id="refresh" title="refresh weather" aria-label="Refresh the current weather ">
+                <i class="fa-solid fa-sync-alt"></i>
+                
+                <i class="fa-solid fa-sync fa-spin none"></i>
+
+            </button>
+            </nav>
+        <hr>
+        
+        <section id="dailyForecast" class="dailyForecast fade-in"role="dailyForecast
+        " aria-labelledby="dailyForecast
+        ">
+        <h2 class="dailyForecast_title offscreen" id="dailyForecast_title"> Six Day forcast</h2>
+        <div class="dailyForecast_content" id="dailyForecast_content">
+            <!-- <div class="forecastDay">
+                <p class="dayAbbrev">SUN</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div>
+            <div class="forecastDay">
+                <p class="dayAbbrev">MON</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div>
+            <div class="forecastDay">
+                <p class="dayAbbrev">TUE</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div>
+            <div class="forecastDay">
+                <p class="dayAbbrev">WED</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div>
+            <div class="forecastDay">
+                <p class="dayAbbrev">THU</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div>
+            <div class="forecastDay">
+                <p class="dayAbbrev">FRI</p>
+                <i class="fa-solid fa-cloud"></i>
+                <P class="dayhigh">59º </P>
+                <P class="daylow">59º </P>
+
+            </div> -->
+        </div>
+         </section>
+         <p id="confirmation" class="offscreen" aria-live=""></p>
+    </main>
+   
+</body>
+</html>

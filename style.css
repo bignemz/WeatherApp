@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   
+    background-blend-mode: overlay;
+    box-sizing: border-box;
+    margin: 0;
+
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: aliceblue;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+ 
+
+}
+
+
+body.cloud{
+   
+     background-color: rgba(44, 9, 238, 0.3);
+    background-image:url("/image/cloud.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+}
+body.rain{
+   
+     background-color: rgba(44, 9, 238, 0.3);
+    background-image:url("/image/rain.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+
+}
+body.night{
+   
+    background-color: rgba(44, 9, 238, 0.3);
+   background-image:url("/image/night.jpg") ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: overlay;
+
+}
+body.snow{
+   
+    background-color: rgba(44, 9, 238, 0.3);
+   background-image:url("/image/snow.jpg") ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: overlay;
+
+}
+body.snow{
+   
+    background-color: rgba(44, 9, 238, 0.3);
+   background-image:url("/image/snow.jpg") ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: overlay;
+
+}
+
+
+main{
+    max-width: 700px;
+    max-height: 1050px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgba(41, 24, 24, 0.3);
+    border: 1px ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2.5;
+}
+img{
+    display: none;
+}
+hr{
+    width: 100%;
+    margin: auto;
+}
+.none {
+    display: none;
+}
+.block{
+    display: block;
+}
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+.button{
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 80px;
+    border: 2px solid white;
+    background-color: transparent;
+   
+    border-color: azure;
+    color: white;
+
+    font-size: 1.25rem;
+    font-weight: 900;
+
+}
+.mystyle {
+  
+    display: none;
+  }
+.button:hover{
+    cursor: pointer;
+    background-color: rgba(41, 24, 24, 0.3);
+    color: black;
+
+}
+
+.button:hover,
+.button:focus{
+    box-shadow: 4px 2px 5px 0.3;
+
+}
+a{
+    position: absolute;
+    top: -999px;
+    left: 0;
+    padding: 14px;
+}
+.searchBar{
+    padding: 0.5rem 0.5rem 1.5rem ;
+}
+.searchBar_form{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 500px;
+    height: 30px;
+}
+.searchBar_text{
+    flex-grow: 1;
+    border: none;
+    margin-right: 0.25rem;
+    background-color: transparent ;
+    padding:0.75rem 0 0.75rem 0.75rem;
+    width: calc(100%-52px);
+    font-size: 1.25rem;
+    color: white;
+    outline: none;
+}
+.searchBar_button{
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    border:none;
+    background-color: transparent;
+    border-color: azure;
+    margin-right: 7px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.navButton{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 0.25rem;
+}
+.currentForecast_location{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.currentForecast_condition{
+    width: 100%;
+    font-size: 1rem;
+    margin: auto auto 2rem;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-row: 1/span3;
+    grid-column: 1/span2;
+    font-size: 4rem;
+    position: relative;
+    text-shadow: -4px 3px 0 #3a50d9, 6px 7px 0 #0a0e27;
+    
+  
+
+}
+.unit{
+    font-size: 1.00rem;
+    text-shadow: none;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-row: 1/span3;
+    grid-column: 3/span2;
+    left: 20%;
+    margin:0 ;
+}
+.icon i {
+   
+    font-size: 1.5rem;
+    position: relative;
+
+
+    grid-row: 1/span3;
+    grid-column: 3/span2;
+    left: 40%;
+    
+
+} 
+.maxtemp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    grid-row: 3/span 1;
+    grid-column: 3/span 2;
+
+    position: relative;
+
+
+    grid-row: 1/span3;
+    grid-column: 3/span2;
+    left: 40%;
+    margin-top: 5px;
+
+}
+.mintemp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    grid-row: 3/ span 1;
+    grid-column: 3/ span 2;
+;
+    position: relative;
+
+
+    grid-row: 1/span3;
+    grid-column: 3/span2;
+    left: 40%;
+
+}
+.mine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+}
+.dailyForecast_title{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.dailyForecast_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly; 
+}
+.forecastDay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center ;  
+}
+.zero-vis{
+    visibility: hidden;
+    opacity: 0;
+}
+.fade-in{
+    visibility: visible;
+    opacity: 1;
+    animation-name: fadeop;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+
+}
+@keyframes fadeop {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
